@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders html in jsdom should have the form-1 sample DOM nodes 1`] = `
+<body>
+  <div
+    class="sample-1"
+  >
+    
+  
+    <form>
+      
+    
+      <input
+        name="firstname"
+        type="text"
+      />
+      
+    
+      <button
+        type="submit"
+      >
+        
+      Go!
+    
+      </button>
+      
+  
+    </form>
+    
+
+  </div>
+  
+
+
+</body>
+`;

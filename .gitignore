@@ -1,0 +1,6 @@
+#
+# Jest coverage reports.
+#
+coverage/
+
+node_modules/
