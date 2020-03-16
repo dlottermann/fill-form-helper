@@ -11,6 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/dlottermann/fill-form-helper.git"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run test -- --coverage"
+    }
+  },
   "keywords": [
     "forms",
     "helper"
@@ -22,6 +27,7 @@
   },
   "homepage": "https://github.com/dlottermann/fill-form-helper#readme",
   "devDependencies": {
+    "husky": "^4.2.3",
     "jest": "^25.1.0"
   }
 }
