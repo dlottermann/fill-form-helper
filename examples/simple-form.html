@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Simple Form</title>
+</head>
+<body>
+
+  <form action="simple-form" method="get" accept-charset="utf-8">
+    <input
+      type="text"
+      name="fullname"
+    />
+
+    <button
+      type="submit"
+    />
+      Go!
+    </button>
+  </form>
+
+<script src="../dist/index.js"></script>
+<script>
+  FillFormHelper.init(document.forms[0], { ramdom: true });
+</script>
+
+</body>
+</html>

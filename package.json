@@ -4,6 +4,8 @@
   "description": "A fill form helper utility to be used in the web browser",
   "main": "index.js",
   "scripts": {
+    "watch": "parcel src/index.js --global FillFormHelper",
+    "build": "parcel src/index.js --global FillFormHelper",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint ."

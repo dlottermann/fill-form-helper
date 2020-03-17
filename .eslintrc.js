@@ -34,6 +34,9 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
+  ignorePatterns: [
+    'dist/*',
+  ],
   rules: {
     //
     // One empty line at the end of files is OK. Come on!
@@ -71,6 +74,13 @@ module.exports = {
     //    const fn = (val) => val.toString();
     //
     'arrow-body-style': [0, 'never'],
+
+    //
+    // Fuck this no-bitwise “oh I'm so dumb” rule.
+    //
+    // “We are hackers, and hackers use black terminals with green colors.”
+    //
+    'no-bitwise': 'off',
   },
 };
 
