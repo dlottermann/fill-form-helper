@@ -32,3 +32,16 @@ $ npm run test:watch
 $ npm run test:watch -- --coverage
 ```
 
+## Building
+
+We can either watch and rebuild the dist files or just build once when necessary:
+
+```
+$ npm run watch
+
+$ npm run build
+```
+
+The built entry file ends up in `dist/index.js`, which can then be included in the HTML pages, like show in `examples/`.
+
+
