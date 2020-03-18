@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  font-size: 18px;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.page h2 {
+  text-align: center;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.field {
+  margin-bottom: 0.5rem;
+  width: 400px;
+}
+
+.wrp-button {
+  display: flex;
+  justify-content: end;
+}
+
+input,
+button {
+  border: 1px solid #aaa;
+  padding: 0.5rem;
+  font: inherit;
+}
+
+input {
+  width: 100%;
+}

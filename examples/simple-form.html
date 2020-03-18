@@ -4,21 +4,42 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Simple Form</title>
+  <link rel="stylesheet" href="forms.css">
 </head>
 <body>
 
-  <form action="simple-form" method="get" accept-charset="utf-8">
-    <input
-      type="text"
-      name="fullname"
-    />
+  <div class="page">
+    <h2>Simple Form</h2>
 
-    <button
-      type="submit"
-    />
-      Go!
-    </button>
-  </form>
+    <section class="form-wrapper simple-form">
+      <form action="simple-form" method="get" accept-charset="utf-8">
+
+        <div class="field">
+          <input
+            type="text"
+            name="fullname"
+          />
+        </div>
+
+        <div class="field">
+          <input
+            type="email"
+            name="email"
+          />
+        </div>
+
+        <div class="wrp-button">
+          <button
+            type="submit"
+          />
+            Go!
+          </button>
+        </div>
+
+      </form>
+    </section>
+
+  </div>
 
 <script src="../dist/index.js"></script>
 <script>

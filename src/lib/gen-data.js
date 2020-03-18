@@ -19,6 +19,7 @@ const genStr = (chars, len) => {
     .join('');
 };
 
+
 /**
  * Generates a person's fullname-like string from random chars.
  *
@@ -29,7 +30,17 @@ const genTwoWords = (len = 6) => {
   return `${genStr(alphabetLower, len)} ${genStr(alphabetLower, len)}`;
 };
 
+
+const genEmail = (nameLen = 6, domainLen = 6) => {
+  return genStr(alphabetLower, nameLen)
+    .concat('@')
+    .concat(genStr(alphabetLower, domainLen))
+    .concat('.')
+    .concat(genStr(alphabetLower, 3));
+};
+
 export {
   genStr,
   genTwoWords,
+  genEmail,
 };
