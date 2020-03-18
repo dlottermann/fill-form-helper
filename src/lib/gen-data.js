@@ -1,4 +1,8 @@
 
+import {
+  alphabetLower,
+} from './string-helpers';
+
 /**
  * Generates a string of a given length from the provided input string.
  *
@@ -21,9 +25,8 @@ const genStr = (chars, len) => {
  * @param {number} len The length of the first name and last name
  * @return {string}
  */
-const genTwoWords = (len = 5) => {
-  const alphabet = 'abcdefghijklmnopqrstuwvxyz';
-  return `${genStr(alphabet, len)} ${genStr(alphabet, len)}`;
+const genTwoWords = (len = 6) => {
+  return `${genStr(alphabetLower, len)} ${genStr(alphabetLower, len)}`;
 };
 
 export {

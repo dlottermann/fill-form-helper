@@ -2,6 +2,10 @@ import {
   guessType,
 } from './guesser';
 
+import {
+  capitalizeWords,
+} from './lib/string-helpers';
+
 import * as Gen from './lib/gen-data';
 
 /**
@@ -31,7 +35,7 @@ const fillField = (field, value) => {
   // @TODO: Use a function to generate random values as appropriate
   // when an explicit value was not provided.
   //
-  field.setAttribute(attr, value || Gen[genFn]());
+  field.setAttribute(attr, value || capitalizeWords(Gen[genFn]()));
   field.dispatchEvent(new Event(event));
 };
 
@@ -39,4 +43,3 @@ const fillField = (field, value) => {
 export {
   fillField,
 };
-
