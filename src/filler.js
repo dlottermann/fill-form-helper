@@ -15,7 +15,7 @@ import * as Gen from './lib/gen-data';
  */
 const attrMap = {
   text: {
-    type: 'text,',
+    type: 'text',
     attr: 'value',
     event: 'change',
     genFn: 'genTwoWords',
@@ -47,9 +47,9 @@ const fillField = (field, value) => {
     genFn,
   } = attrMap[guessType(field)];
 
-  const val = value || Gen[genFn]();
+  const val = value || verifyCapitalization(type, Gen[genFn]());
 
-  field.setAttribute(attr, verifyCapitalization(type, val));
+  field.setAttribute(attr, val);
   field.dispatchEvent(new Event(event));
 };
 
